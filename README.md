@@ -37,13 +37,46 @@ make build
 make bins
 ```
 
-## Building Linux toolchain from source without docker
+## Building Barebones Linux toolchain
+
+(coming soon)
+
+This installs only the bare essentials (yosys/nextpnr/fujprog) to get started with FPGA programming.
+
+For ESP32, RISC-V and other features - see the full toolchain.
+
+## Building Full Linux toolchain from source without docker
 
 Another way is to use scripts to build complete toolchain https://github.com/ulx3s/ulx3s-toolchain
 
 ```
-git clone https://github.com/ulx3s/ulx3s-toolchain
+sudo apt-get install git --assume-yes
+mkdir -p ~/workspace
+cd ~/workspace
+
+git clone https://github.com/ulx3s/ulx3s-toolchain.git
 cd ulx3s-toolchain
+chmod +x ./install_all.sh
+./install_all.sh
+```
+
+## Building Full Windows Subsystem for Linux (WSL) toolchain from source without docker
+
+This buld assumes [WSL](https://docs.microsoft.com/en-us/windows/wsl/faq) is already installed. WSL2 has not yet been tested.
+
+The only difference from regular Linux install is this one puts files on the `C:\Workspace` directory 
+for safe and easy access from Windows. 
+Be aware of the [dangers](https://devblogs.microsoft.com/commandline/do-not-change-linux-files-using-windows-apps-and-tools/)
+of editing WSL file system from Windows.
+
+```
+sudo apt-get install git --assume-yes
+mkdir -p /mnt/c/workspace/
+cd /mnt/c/workspace/
+
+git clone https://github.com/ulx3s/ulx3s-toolchain.git
+cd ulx3s-toolchain
+chmod +x ./install_all.sh
 ./install_all.sh
 ```
 
