@@ -1,6 +1,14 @@
 # quick-start
 ULX3S Quick Start
 
+# Know your programmer!
+
+Newer versions of the ULX3S, such as those shipped to [Crowd Supply](https://www.crowdsupply.com/radiona/ulx3s) backers, 
+require the [latest version of fujprog](https://github.com/kost/fujprog/releases). Older versions of `fujprog` as well
+as [ujprog](https://github.com/f32c/tools/tree/master/ujprog) *MAY NOT WORK PROPERLY*. Further, running the [test scripts](https://github.com/goran-mahovlic/ULX3S_testing)
+on prior versions of the ULX3S may update the FTDI software, which in turn will also make the prior versions of the programmers no longer function. 
+See [fujprog issue #5](https://github.com/kost/fujprog/issues/5)
+
 # Getting toolchain binaries
 
 ## Linux binaries
