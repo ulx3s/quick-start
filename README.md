@@ -13,7 +13,14 @@ See [fujprog issue #5](https://github.com/kost/fujprog/issues/5)
 
 ## Linux binaries
 
-You can download complete ECP5 toolchain from https://github.com/FPGAwars/toolchain-ecp5/releases
+You can download complete ECP5 toolchain from https://github.com/open-tool-forge/fpga-toolchain/releases
+
+Grab the latest build for your platform, extract them somewhere on your PC, and add the fpga-toolchain\bin folder to your path:
+
+    MacOS: export PATH=[path-to-bin]:$PATH
+    Linux: export PATH=[path-to-bin]:$PATH
+    Windows Powershell: $ENV:PATH = "[path-to-bin];" + $ENV:PATH
+    Windows cmd.exe: PATH=[path-to-bin];%PATH%
 
 If you want to download Intel x86_64 latest binaries, you can download them from the https://github.com/alpin3/ulx3s/releases
 
@@ -28,7 +35,7 @@ brew install --HEAD project-trellis yosys nextpnr-trellis fujprog
 
 ## Windows support
 
-You can download complete ECP5 toolchain from https://github.com/FPGAwars/toolchain-ecp5/releases
+You can download complete ECP5 toolchain from https://github.com/open-tool-forge/fpga-toolchain/releases
 
 # Building toolchain from source
 
