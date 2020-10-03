@@ -99,6 +99,8 @@ chmod +x ./install_all.sh
 
 Now, you're ready for the next steps, we suggest following:
 
+  - https://github.com/emard/ulx3s/blob/master/doc/MANUAL.md
+  - https://github.com/emard/ulx3s-misc
   - https://github.com/ulx3s/fpga-odysseus
   - https://github.com/emard/ulx3s-examples
   - https://github.com/emard/ulx3s-bin
