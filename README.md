@@ -15,7 +15,7 @@ Older versions of `fujprog` as well as [ujprog](https://github.com/f32c/tools/tr
 
 # Blink a LED
 
-  - https://github.com/emard/ulx3s-examples/blob/master/blinky/OpenSource/README.md
+  - https://github.com/emard/ulx3s-examples/blob/master/blinky/OpenSource
 
 # Building toolchain from source
 
