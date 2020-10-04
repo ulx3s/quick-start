@@ -1,6 +1,12 @@
 # quick-start
 ULX3S Quick Start
 
+# Know your programmer!
+
+Newer versions of the ULX3S, such as those shipped to [Crowd Supply](https://www.crowdsupply.com/radiona/ulx3s) backers, require the [latest version of fujprog](https://github.com/kost/fujprog/releases). 
+
+Older versions of `fujprog` as well as [ujprog](https://github.com/f32c/tools/tree/master/ujprog) *MAY NOT WORK PROPERLY*.
+
 # Getting toolchain binaries
 
 ## Precompiled opensource tools for all platforms
@@ -77,11 +83,6 @@ cd ulx3s-toolchain
 chmod +x ./install_all.sh
 ./install_all.sh
 ```
-# Know your programmer!
-
-Newer versions of the ULX3S, such as those shipped to [Crowd Supply](https://www.crowdsupply.com/radiona/ulx3s) backers, require the [latest version of fujprog](https://github.com/kost/fujprog/releases). 
-
-Older versions of `fujprog` as well as [ujprog](https://github.com/f32c/tools/tree/master/ujprog) *MAY NOT WORK PROPERLY*.
 
 # Next steps
 
