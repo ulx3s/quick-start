@@ -11,31 +11,22 @@ See [fujprog issue #5](https://github.com/kost/fujprog/issues/5)
 
 # Getting toolchain binaries
 
-## Linux binaries
+## Precompiled opensource tools for all platforms
 
-You can download complete ECP5 toolchain from https://github.com/open-tool-forge/fpga-toolchain/releases
+  - https://github.com/emard/ulx3s/blob/master/doc/MANUAL.md#precompiled-opensource-tools-for-all-platforms
 
-Grab the latest build for your platform, extract them somewhere on your PC, and add the fpga-toolchain\bin folder to your path:
-
-    MacOS: export PATH=[path-to-bin]:$PATH
-    Linux: export PATH=[path-to-bin]:$PATH
-    Windows Powershell: $ENV:PATH = "[path-to-bin];" + $ENV:PATH
-    Windows cmd.exe: PATH=[path-to-bin];%PATH%
-
-If you want to download Intel x86_64 latest binaries, you can download them from the https://github.com/alpin3/ulx3s/releases
-
-## Mac OS X support
-
-If you're using homebrew it is enough to add homebrew tap and add packages:
+On linux based systems you may also need to add a udev rule to enable user access to the usb device, once added you’ll need to un-plug and reconnect the ULX3S for it to take effect
 
 ```
-brew tap kost/homebrew-ulx3s
-brew install --HEAD project-trellis yosys nextpnr-trellis fujprog
+$ cat /etc/udev/rules.d/80-fpga-ulx3s.rules
+# file: /etc/udev/rules.d/80-fpga-ulx3s.rules
+# this is for usb-serial tty device
+SUBSYSTEM=="tty", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6015", \
+  MODE="664", GROUP="dialout"
+# this is for ujprog libusb access
+ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6015", \
+  GROUP="dialout", MODE="666"
 ```
-
-## Windows support
-
-You can download complete ECP5 toolchain from https://github.com/open-tool-forge/fpga-toolchain/releases
 
 # Building toolchain from source
 
@@ -105,6 +96,14 @@ Now, you're ready for the next steps, we suggest following:
   - https://github.com/emard/ulx3s-examples
   - https://github.com/emard/ulx3s-bin
   - https://github.com/kost/ulx3s-ghdl-examples/
+
+Discord chanel
+
+  - https://discord.gg/qwMUk6W
+
+Gitter chanel
+
+  - https://gitter.im/ulx3s/Lobby (Focused on deevelopment)
 
 Or explore different projects available at: https://ulx3s.github.io/
 
