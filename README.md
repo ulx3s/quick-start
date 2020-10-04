@@ -13,18 +13,9 @@ Older versions of `fujprog` as well as [ujprog](https://github.com/f32c/tools/tr
 
   - https://github.com/emard/ulx3s/blob/master/doc/MANUAL.md#precompiled-opensource-tools-for-all-platforms
 
-On linux based systems you may also need to add a udev rule to enable user access to the usb device, once added you’ll need to un-plug and reconnect the ULX3S for it to take effect
+# Blink a LED
 
-```
-$ cat /etc/udev/rules.d/80-fpga-ulx3s.rules
-# file: /etc/udev/rules.d/80-fpga-ulx3s.rules
-# this is for usb-serial tty device
-SUBSYSTEM=="tty", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6015", \
-  MODE="664", GROUP="dialout"
-# this is for ujprog libusb access
-ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6015", \
-  GROUP="dialout", MODE="666"
-```
+  - https://github.com/emard/ulx3s-examples/blob/master/blinky/OpenSource/README.md
 
 # Building toolchain from source
 
