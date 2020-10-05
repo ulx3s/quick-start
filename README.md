@@ -7,6 +7,12 @@ Newer versions of the ULX3S, such as those shipped to [Crowd Supply](https://www
 
 Older versions of `fujprog` as well as [ujprog](https://github.com/f32c/tools/tree/master/ujprog) *MAY NOT WORK PROPERLY*.
 
+# Connecting ULX3S
+
+You need to connect to USB1 (US1) connector to the host computer in order to program the board.
+
+![](images/images/ulx3s-usb1.jpg?raw=true)
+
 # Getting toolchain binaries
 
 ## Precompiled opensource tools for all platforms
