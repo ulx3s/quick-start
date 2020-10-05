@@ -21,7 +21,7 @@ You need to connect to USB1 (US1) connector to the host computer in order to pro
 
 # Blink a LED
 
-  - https://github.com/emard/ulx3s-examples/blob/master/blinky/OpenSource
+  - https://github.com/ulx3s/blink
 
 # Building toolchain from source
 
