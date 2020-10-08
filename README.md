@@ -9,7 +9,7 @@ Older versions of `fujprog` as well as [ujprog](https://github.com/f32c/tools/tr
 
 # Connecting ULX3S
 
-You need to connect to USB1 (US1) connector to the host computer in order to program the board.
+You need to connect to USB1 (US1) connector to the host computer in order to program the board. Connecting to USB2 (US2) will not work.
 
 ![](images/ulx3s-usb1.jpg?raw=true)
 
@@ -18,6 +18,15 @@ You need to connect to USB1 (US1) connector to the host computer in order to pro
 ## Precompiled opensource tools for all platforms
 
   - https://github.com/emard/ulx3s/blob/master/doc/MANUAL.md#precompiled-opensource-tools-for-all-platforms
+
+## Mac OS X toolchain via homebrew
+
+You can get Mac OS X toolchain by running following commands:
+
+```
+brew tap kost/homebrew-ulx3s
+brew install --HEAD project-trellis yosys nextpnr-trellis fujprog
+```
 
 # Blink a LED
 
